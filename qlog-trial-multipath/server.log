@@ -1,0 +1,8 @@
+No token file present. Will create one as </mnt/c/Users/altan/Downloads/ietf/quic/picoquic/qlog-trial-multipath/server-tokens.bin>.
+Starting Picoquic server (v1.1.54.0) on port 44434, server name = ::, just_once = 1, do_retry = 0
+Accept enable multipath: 1.
+Waiting for packets.
+First connection noticed.
+No more active connections.
+Server exit, ret = 0x0
+Server exit with code = 0
