@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 680" role="img">
+  <title>One-system testbed</title>
+  <desc>picoquic client and server on loopback inside WSL2, with qlogs opened in qvis.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#1d4e89"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: "Segoe UI", sans-serif; }
+    .title { font-size: 22px; font-weight: 600; fill: #1c2833; }
+    .sub { font-size: 14px; fill: #52606d; }
+    .h { font-size: 15px; font-weight: 600; fill: #1c2833; }
+    .b { font-size: 13px; fill: #1c2833; }
+    .m { font-size: 12px; fill: #52606d; }
+    .frame { fill: #f4f7fa; stroke: #1c2833; stroke-width: 1.5; }
+    .panel { fill: #ffffff; stroke: #1c2833; stroke-width: 1.25; }
+    .node { fill: #ffffff; stroke: #1c2833; stroke-width: 1.25; }
+    .soft { fill: #e7eef5; stroke: #1c2833; stroke-width: 1.25; }
+    .out { fill: #f6f1e4; stroke: #1c2833; stroke-width: 1.5; }
+    .line { fill: none; stroke: #1d4e89; stroke-width: 1.5; }
+  </style>
+
+  <text class="title" x="36" y="40">One-system testbed</text>
+  <text class="sub" x="36" y="64">Loopback inside WSL2 on this PC</text>
+
+  <rect class="frame" x="28" y="84" width="792" height="564" rx="14"/>
+  <text class="h" x="52" y="116">WSL2 Ubuntu on this PC</text>
+
+  <rect class="soft" x="286" y="136" width="276" height="56" rx="8"/>
+  <text class="b" x="424" y="158" text-anchor="middle">certs</text>
+  <text class="m" x="424" y="176" text-anchor="middle">CN test.example.com</text>
+
+  <rect class="panel" x="52" y="216" width="500" height="168" rx="10"/>
+  <text class="h" x="72" y="244">Trial 1 · UDP 44433</text>
+  <rect class="node" x="72" y="262" width="176" height="68" rx="8"/>
+  <text class="b" x="160" y="288" text-anchor="middle">picoquicdemo client</text>
+  <text class="m" x="160" y="308" text-anchor="middle">127.0.0.1</text>
+  <rect class="node" x="352" y="262" width="176" height="68" rx="8"/>
+  <text class="b" x="440" y="288" text-anchor="middle">picoquicdemo server</text>
+  <text class="m" x="440" y="308" text-anchor="middle">UDP 44433</text>
+  <line class="line" x1="248" y1="296" x2="346" y2="296" marker-end="url(#arr)"/>
+  <text class="m" x="72" y="360">GET /index.html · 117 byte HTML file</text>
+
+  <rect class="panel" x="52" y="404" width="500" height="168" rx="10"/>
+  <text class="h" x="72" y="432">Trial 2 · UDP 44434</text>
+  <rect class="node" x="72" y="450" width="176" height="68" rx="8"/>
+  <text class="b" x="160" y="476" text-anchor="middle">picoquicdemo client</text>
+  <text class="m" x="160" y="496" text-anchor="middle">path 0 and path 1</text>
+  <rect class="node" x="352" y="450" width="176" height="68" rx="8"/>
+  <text class="b" x="440" y="476" text-anchor="middle">picoquicdemo server</text>
+  <text class="m" x="440" y="496" text-anchor="middle">multipath on</text>
+  <line class="line" x1="248" y1="484" x2="346" y2="484" marker-end="url(#arr)"/>
+  <text class="m" x="72" y="548">GET /200000 · 200000 bytes of 0x5A</text>
+
+  <rect class="node" x="600" y="262" width="188" height="68" rx="8"/>
+  <text class="b" x="694" y="288" text-anchor="middle">qlog-trial</text>
+  <text class="m" x="694" y="308" text-anchor="middle">client and server</text>
+  <rect class="node" x="600" y="450" width="188" height="68" rx="8"/>
+  <text class="b" x="694" y="476" text-anchor="middle">qlog-trial-multipath</text>
+  <text class="m" x="694" y="496" text-anchor="middle">client and server</text>
+
+  <line class="line" x1="552" y1="296" x2="594" y2="296" marker-end="url(#arr)"/>
+  <line class="line" x1="552" y1="484" x2="594" y2="484" marker-end="url(#arr)"/>
+
+  <rect class="out" x="868" y="300" width="196" height="168" rx="10"/>
+  <text class="b" x="966" y="372" text-anchor="middle">qvis</text>
+  <text class="m" x="966" y="394" text-anchor="middle">qvis.quictools.info</text>
+
+  <path class="line" d="M788 296 H828 V384 H862" marker-end="url(#arr)"/>
+  <path class="line" d="M788 484 H828 V384 H862" marker-end="url(#arr)"/>
+</svg>

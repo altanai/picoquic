@@ -1,0 +1,46 @@
+No token file present. Will create one as </mnt/c/Users/altan/Downloads/ietf/quic/picoquic/qlog-trial-multipath/client-tokens.bin>.
+config.multipath_alt_config: 0.0.0.0/0
+Starting Picoquic (v1.1.54.0) connection to server = 127.0.0.1, port = 44434
+Testing scenario: <*0:0:/200000;>
+Max streams bidir remote before start = 0 (0)
+Starting client connection. Version = 1, I-CID: e29c3d8880a69754
+Max streams bidir remote after start = 0 (0)
+Waiting for packets.
+Client port (AF=2): 49293.
+Negotiated ALPN: h3
+Almost ready!
+
+Connection established. Version = 1, I-CID: e29c3d8880a69754, verified: 1
+Opening stream 0 to GET /200000
+Stream 0 ended after 200000 bytes
+All done, Closing the connection.
+Received a request to close the connection.
+The connection is closed!
+Address Discovery mode: 0 / 0 (0:0)
+Quic Bit was NOT greased by the client.
+Quic Bit was NOT greased by the server.
+ECN was not received.
+ECN was not acknowledged.
+Enable multipath: Success.
+Received 200067 bytes in 0.027994 seconds, 57.174252 Mbps.
+Sent 88 bytes in 0.027994 seconds, 0.025148 Mbps.
+max_data_local: 1048576
+max_stream_data_local: 2097152
+max_data_remote: 1048576
+max_stream_data_remote: 0
+ack_delay_remote: 1000 ... 1000
+max_ack_gap_remote: 25
+ack_delay_local: 1170 ... 25000
+max_ack_gap_local: 2
+max_mtu_sent: 1252
+max_mtu_received: 1440
+Path[0], packets sent: 1
+Path[1], packets sent: 8
+System call duration max: 52
+System call duration smoothed: 0
+System call duration deviation: 0
+Received ticket from test.example.com (h3):
+ticket time = 1795650377678, kx = 1d, suite = 1301, 130 ticket, 32 secret.
+lifetime = 100000, age_add = 765c6f5b, 0 nonce, 109 ticket, 8 extensions.
+ticket extensions: 42(ED: ffffffff),
+Client exit with code = 0

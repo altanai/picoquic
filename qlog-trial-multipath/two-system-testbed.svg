@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 680" role="img">
+  <title>Two-system testbed</title>
+  <desc>picoquic server on this PC and picoquic client on an Ubuntu PC, both on the same Wi-Fi.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#1d4e89"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: "Segoe UI", sans-serif; }
+    .title { font-size: 22px; font-weight: 600; fill: #1c2833; }
+    .sub { font-size: 14px; fill: #52606d; }
+    .h { font-size: 15px; font-weight: 600; fill: #1c2833; }
+    .b { font-size: 13px; fill: #1c2833; }
+    .m { font-size: 12px; fill: #52606d; }
+    .frame { fill: #f4f7fa; stroke: #1c2833; stroke-width: 1.5; }
+    .panel { fill: #ffffff; stroke: #1c2833; stroke-width: 1.25; }
+    .node { fill: #ffffff; stroke: #1c2833; stroke-width: 1.25; }
+    .soft { fill: #e7eef5; stroke: #1c2833; stroke-width: 1.25; }
+    .inner { fill: #eef3f8; stroke: #1c2833; stroke-width: 1.25; }
+    .out { fill: #f6f1e4; stroke: #1c2833; stroke-width: 1.5; }
+    .line { fill: none; stroke: #1d4e89; stroke-width: 1.5; }
+  </style>
+
+  <text class="title" x="36" y="40">Two-system testbed</text>
+  <text class="sub" x="36" y="64">Same Wi-Fi · server on this PC · client on the Ubuntu PC</text>
+
+  <rect class="frame" x="28" y="84" width="1044" height="460" rx="14"/>
+  <text class="h" x="52" y="116">Same Wi-Fi</text>
+
+  <rect class="panel" x="52" y="140" width="430" height="372" rx="10"/>
+  <text class="h" x="72" y="172">This PC</text>
+  <text class="m" x="72" y="192">Windows · 192.168.68.60</text>
+
+  <rect class="inner" x="72" y="212" width="390" height="276" rx="10"/>
+  <text class="b" x="92" y="240">WSL2 Ubuntu · mirrored networking</text>
+  <rect class="soft" x="92" y="258" width="350" height="52" rx="8"/>
+  <text class="b" x="267" y="280" text-anchor="middle">certs</text>
+  <text class="m" x="267" y="298" text-anchor="middle">CN test.example.com</text>
+  <rect class="node" x="92" y="326" width="350" height="64" rx="8"/>
+  <text class="b" x="267" y="352" text-anchor="middle">picoquicdemo server</text>
+  <text class="m" x="267" y="372" text-anchor="middle">UDP 44434</text>
+  <rect class="node" x="92" y="406" width="350" height="56" rx="8"/>
+  <text class="b" x="267" y="440" text-anchor="middle">server qlog</text>
+
+  <rect class="panel" x="618" y="140" width="430" height="372" rx="10"/>
+  <text class="h" x="638" y="172">Ubuntu PC</text>
+  <text class="m" x="638" y="192">same Wi-Fi</text>
+  <rect class="soft" x="638" y="220" width="390" height="52" rx="8"/>
+  <text class="b" x="833" y="252" text-anchor="middle">test-ca.crt</text>
+  <rect class="node" x="638" y="292" width="390" height="72" rx="8"/>
+  <text class="b" x="833" y="320" text-anchor="middle">picoquicdemo client</text>
+  <text class="m" x="833" y="340" text-anchor="middle">SNI test.example.com</text>
+  <rect class="node" x="638" y="384" width="390" height="56" rx="8"/>
+  <text class="b" x="833" y="418" text-anchor="middle">client qlog</text>
+
+  <line class="line" x1="612" y1="348" x2="488" y2="348" marker-end="url(#arr)"/>
+  <text class="m" x="550" y="308" text-anchor="middle">QUIC over Wi-Fi</text>
+  <text class="m" x="550" y="326" text-anchor="middle">192.168.68.60:44434</text>
+
+  <rect class="out" x="450" y="576" width="200" height="72" rx="10"/>
+  <text class="b" x="550" y="604" text-anchor="middle">qvis</text>
+  <text class="m" x="550" y="624" text-anchor="middle">qvis.quictools.info</text>
+
+  <path class="line" d="M267 462 V548 H500 V570" marker-end="url(#arr)"/>
+  <path class="line" d="M833 440 V548 H600 V570" marker-end="url(#arr)"/>
+</svg>
